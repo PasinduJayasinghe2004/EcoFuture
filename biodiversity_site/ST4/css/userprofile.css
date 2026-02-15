@@ -1,5 +1,14 @@
 /* ===== Modern & Clean User Profile Styles ===== */
 
+/* CSS Variables */
+:root {
+  --primary-green: #3d6b35;
+  --secondary-green: #2d4d27;
+  --accent-beige: #f5f0e6;
+  --text-dark: #2c3e50;
+  --footer-height: 60px;
+}
+
 /* Base Body Styles */
 body {
   color: var(--text-dark);
@@ -212,12 +221,6 @@ body::before {
   border-radius: 10px;
   position: relative;
   transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
-  animation: shimmer 2s infinite;
-}
-
-@keyframes shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
 }
 
 .progress-bar::after {
