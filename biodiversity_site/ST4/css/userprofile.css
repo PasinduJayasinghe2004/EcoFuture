@@ -1,0 +1,167 @@
+body{
+    background-color: #8adaa7;
+    
+}
+
+.container{
+    display:flex;
+    align-items:flex-start;
+    gap:20px;
+    margin-top: 80px;
+
+}
+.profile-card img{
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    object-fit:cover;
+    padding:30px;
+    margin-top:10px;
+    margin-bottom:15px;
+    margin-left:-20px;
+
+}
+.profile-card{
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0px 4px 10px rgba(0,0,0,0.1);
+    width:300px;
+    border:2px solid #000000
+}
+.profile-card:hover{
+    background:#a5efc0;
+    color:white;
+
+}
+.edit-btn{
+    border-radius:15px;
+    padding:10px;
+}
+.edit-btn:hover{
+    background:#38754f;
+    color:white;
+}
+.main-content{
+    width:40%;
+    padding:20px;
+}
+.bio{
+    background:green;
+    color:aliceblue;
+    padding:10px;
+    border-radius:10px;
+}
+.bio:hover{
+    background:#8adaa7;
+    
+}
+.skill{
+    margin:10px 0;
+}
+.progress{
+    background:rgb(226, 225, 225);
+    height:10px;
+    border-radius:5px;
+    overflow:hidden;
+}
+.progress-bar{
+    height:100%;
+    background:#75e577;
+}
+
+.section1{
+    margin:20px 0px;;
+    border:2px solid black;
+    padding:20px;
+    border-radius:10px;
+
+}
+.section1:hover{
+    background:#8adaa7;
+    color:white;
+}
+.section1 h3{
+    color:#1d1f1d;
+}
+.side-panel{
+    width:30%;
+    padding:20px;
+}
+.Availability-table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    color:black;
+    border-radius:5px;
+    overflow:hidden;
+}
+.Availability-table th,.Availability-table td{
+    padding:10px;
+    text-align:center;
+    border:1px solid green
+
+
+}
+.Availability-table th{
+    background:rgb(75, 226, 75);
+    color:aliceblue;
+}
+.Availability-table td{
+    background:rgb(97, 162, 97);
+}
+.Availability-table td:nth-child(even){
+    background:white;
+}
+.un-goals{
+    display:flex;
+    gap:10px;
+
+}
+.un-goals{
+    width:200px;
+    height:200px;
+}
+
+.contact input,.contact textarea{
+    width:100%;
+    padding:10px;
+    margin:5px 0;
+    border:1px solid #ddd;
+    border-radius:5px;
+}
+.contact button{
+    width:100%;
+    padding:10px;
+    background:#0f9e44;
+    color:white;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+
+}
+.contact button:hover{
+    background:lightgreen;
+}
+body {
+  color: var(--text-dark);
+  line-height: 1.6;
+  background: var(--accent-beige);
+  position: relative;
+  padding-bottom: var(--footer-height);
+  min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      rgba(245, 240, 230, 0.702),
+      rgba(245, 240, 230, 0.827)
+    ),
+    url("../images/profileback.jpg") center/cover fixed;
+  z-index: -1;
+}

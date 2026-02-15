@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Solution - Feedback</title>
+    <link rel="stylesheet" href="../ST3/css/global.css">
+    <link rel="stylesheet" href="../ST3/css/feedback.css">
+    <style>
+      
+    </style>
+  </head>
+
+  <body data-scroll>
+    <header>
+      <a href="../ST2/home.html" class="logo-link">
+        <img src="../ST3/images/logo.png" alt="EcoSolutions Logo" class="logo-img">
+      </a>
+      <nav>
+        <div class="nav-links">
+          <a href="../ST2/home.html">Home</a>
+          <a href="../ST1/splash.html">Splash Screen</a>
+          <a href="../ST3/team.html">Team</a>
+          <a href="">Table</a>
+          <a href="../ST4/sitemap_st4.html">Sitemap</a>
+          <a href="../ST1/Volunteer_ST1.html">Volunteer</a>
+          <a href="../ST3/feedback.html">Feedback</a>
+          <a href="../ST4/userprofile.html">User Profile</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="feedback-hero">
+      <div class="container">
+        <h1>Share Your Feedback</h1>
+        <p>Help us improve our environmental initiatives with your valuable input</p>
+      </div>
+    </section>
+
+       <div class="form-container">
+      <div class="form-header">
+        <h1>Environmental Feedback Form</h1>
+        <p>Share your thoughts to help us improve our ecological services</p>
+      </div>
+
+      <form id="feedbackForm" novalidate>
+        <fieldset>
+          <legend>Personal Information</legend>
+          <div class="input-grid">
+            <div class="form-group">
+              <label for="fullName" class="required">Full Name</label>
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                required
+                placeholder="Your full name"
+                title="Please enter your full name">
+              <div class="error" id="nameError"></div>
+            </div>
+            <div class="form-group">
+              <label for="email" class="required">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="your.email@example.com"
+                title="Please enter a valid email address (example@domain.com)"
+              >
+              <div class="error" id="emailError"></div>
+            </div>
+          </div>
+          <div class="input-grid">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Your contact number"
+              >
+            </div>
+            <div class="form-group">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <textarea
+              id="address"
+              name="address"
+              rows="2"
+              placeholder="Your address"
+            ></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Environmental Interests</legend>
+          <div class="form-group">
+            <label for="department" class="required"
+              >Department You Contacted</label
+            >
+            <select
+              id="department"
+              name="department"
+              required
+              title="Please select the department you contacted"
+            >
+              <option value="">Select a department</option>
+              <option value="conservation">Conservation</option>
+              <option value="renewable">Renewable Energy</option>
+              <option value="education">Environmental Education</option>
+              <option value="community">Community Projects</option>
+              <option value="other">Other</option>
+            </select>
+            <div class="error" id="deptError"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="threatened-regions"
+              >Which threatened regions should we focus on?</label
+            >
+            <select
+              id="threatened-regions"
+              name="threatened-regions[]"
+              multiple
+              size="4"
+              title="Select regions you think need urgent climate action"
+            >
+              <option value="arctic">Arctic/North Pole</option>
+              <option value="antarctica">Antarctica</option>
+              <option value="amazon">Amazon Rainforest</option>
+              <option value="coral-reefs">Coral Reefs</option>
+              <option value="sahara">Sahara Desert</option>
+              <option value="subsaharan">Sub-Saharan Africa</option>
+              <option value="coastal">Coastal Areas</option>
+              <option value="islands">Pacific Islands</option>
+              <option value="himalayas">Himalayan Glaciers</option>
+              <option value="tundra">Tundra Regions</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Topics of Interest</label>
+            <div class="checkbox-group">
+              <label
+                ><input
+                  type="checkbox"
+                  name="interests"
+                  value="climate"
+                  title="Select if you're interested in climate change"
+                >
+                Climate Change</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="interests"
+                  value="biodiversity"
+                  title="Select if you're interested in biodiversity"
+                >
+                Biodiversity</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="interests"
+                  value="waste"
+                  title="Select if you're interested in waste management"
+                >
+                Waste Management</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="interests"
+                  value="energy"
+                  title="Select if you're interested in renewable energy"
+                >
+                Renewable Energy</label
+              >
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>How did you hear about us?</label>
+            <div class="radio-group">
+              <label
+                ><input type="radio" name="source" value="social"> Social
+                Media</label
+              >
+              <label
+                ><input type="radio" name="source" value="friend">
+                Friend/Family</label
+              >
+              <label
+                ><input type="radio" name="source" value="search"> Search
+                Engine</label
+              >
+              <label
+                ><input type="radio" name="source" value="event"> Event</label
+              >
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your Feedback</legend>
+          <div class="form-group">
+            <label for="suggestion" class="required"
+              >Comments & Suggestions</label>
+            <textarea
+              id="suggestion"
+              name="suggestion"
+              rows="4"
+              required
+              maxlength="500"
+              placeholder="Please share your thoughts or suggestions"
+            ></textarea>
+            <div class="char-counter"><span id="charCount">0</span>/500</div>
+            <div class="error" id="commentError"></div>
+          </div>
+
+          <div class="form-group">
+            <label>Rate Our Environmental Services</label>
+            <div class="star-rating">
+              <input
+                type="radio"
+                id="star5"
+                name="rating"
+                value="5"
+              />
+              <label for="star5" title="Excellent">★</label>
+              <input
+                type="radio"
+                id="star4"
+                name="rating"
+                value="4"
+              />
+              <label for="star4" title="Very Good">★</label>
+              <input
+                type="radio"
+                id="star3"
+                name="rating"
+                value="3"
+              />
+              <label for="star3" title="Good">★</label>
+              <input
+                type="radio"
+                id="star2"
+                name="rating"
+                value="2"
+              />
+              <label for="star2" title="Fair">★</label>
+              <input
+                type="radio"
+                id="star1"
+                name="rating"
+                value="1"
+              />
+              <label for="star1" title="Poor">★</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="attachment">Upload Attachment</label>
+            <input
+              type="file"
+              id="attachment"
+              name="attachment"
+              class="file-input"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="scheduleDate">Schedule Form Submission</label>
+            <input type="date" id="scheduleDate" name="scheduleDate" />
+            <div class="error" id="scheduleDateError"></div>
+          </div>
+
+          <button type="submit">
+            Submit Feedback
+          </button>
+        </fieldset>
+      </form>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Biodiversity & Ecosystem. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="feedback_val.html">Validation</a>
+        <span class="divider">|</span>
+        <a href="editor.html">Page Editor</a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page Validation Report</title>
+    <link rel="stylesheet" href="../ST3/css/global.css">
+    <link rel="stylesheet" href="../ST3/css/feedback_val.css">
+    <link rel="stylesheet" href="../ST3/css/pageEditor_validator.css">
+
+</head>
+<body data-scroll>
+    <header>
+        <a href="../ST2/home.html" class="logo-link">
+            <img src="../ST3/images/logo.png" alt="biodiversity Logo" class="logo-img">
+        </a>
+        <nav>
+            <div class="nav-links">
+                <a href="../ST2/home.html">Home</a>
+                <a href="../ST1/splash.html">Splash Screen</a>
+                <a href="../ST3/team.html">Team</a>
+                <a href="">Table</a>
+                <a href="../ST4/sitemap_st4.html">Sitemap</a>
+                <a href="../ST1/Volunteer_ST1.html">Volunteer</a>
+                <a href="../ST3/feedback.html">Feedback</a>
+                <a href="../ST4/userprofile.html">User Profile</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="team-hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <h1>Feedback Page Validation Report</h1>
+            <p>Detailed validation results for the Feedback page implementation</p>
+        </div>
+    </section>
+
+    <div class="validation-container">
+        <main>
+            <section>
+                <h2 id="feedbackVal">Feedback Page Validation Report</h2>
+                <div class="reflection">
+                    <p>The Feedback page validation was completed successfully with zero errors. The form implements comprehensive client-side validation with proper HTML5 form controls and validation attributes. All interactive elements meet W3C standards and accessibility guidelines.</p>
+                    
+                    <p>Key validation points addressed:</p>
+                    <ul>
+                        <li>Proper form structure with semantic HTML5 elements</li>
+                        <li>Client-side validation for all required fields</li>
+                        <li>Accessible form controls with proper labels and ARIA attributes</li>
+                        <li>Valid email and phone number pattern matching</li>
+                        <li>Character counting functionality for textareas</li>
+                        <li>Interactive star rating system with proper keyboard navigation</li>
+                        <li>Responsive design that works across all device sizes</li>
+                    </ul>
+                    
+                    <p>The validation process helped identify and correct several issues including:</p>
+                    <ul>
+                        <li>Ensuring all form fields have proper labels and accessibility attributes</li>
+                        <li>Validating the date input for future dates only</li>
+                        <li>Improving the error message display system</li>
+                        <li>Optimizing the form submission handling</li>
+                    </ul>
+                </div>
+                
+                <h3 id="htmlVal">HTML Validation Screenshot</h3>
+                <img src="../ST3/images/feedback_val.png" alt="Feedback Page HTML Validation Screenshot" class="validation-img">
+                
+                <h3 id="cssVal">CSS Validation Screenshot</h3>
+                <img src="../ST3/images/feedbackcss_val.png" alt="Feedback Page CSS Validation Screenshot" class="validation-img">
+                
+                <h3 id="javaVal">JavaScript Validation</h3>
+                <div class="reflection">
+                    <p>The form includes robust JavaScript validation that checks:</p>
+                    <ul>
+                        <li>Required field completion</li>
+                        <li>Email format validation</li>
+                        <li>Phone number format validation</li>
+                        <li>Date validation (future dates only)</li>
+                        <li>Character count for comments</li>
+                        <li>Form reset functionality</li>
+                    </ul>
+                    <p>All JavaScript code passes JSHint validation with no errors or warnings.</p>
+                </div>
+                
+                <h3 id="accessibility">Accessibility Check Results</h3>
+                <div class="reflection">
+                    <p>The page passes WCAG 2.1 AA accessibility standards with:</p>
+                    <ul>
+                        <li>Proper contrast ratios for all text and interactive elements</li>
+                        <li>Keyboard navigable form controls</li>
+                        <li>Descriptive error messages</li>
+                        <li>ARIA attributes for dynamic content</li>
+                        <li>Proper heading structure</li>
+                        <li>Alternative text for all images</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <a href="#top" class="go-to-top"><i class="fas fa-arrow-up"></i> Back to Top</a>
+        </main>
+
+        <aside>
+            <h3>Validation Navigation</h3>
+            <ul class="top-level-ul">
+                <li>Feedback Page Details</li>
+                <ul>
+                    <li><a href="#feedbackVal">Validation Report</a></li>
+                    <li><a href="#htmlVal">HTML Validation</a></li>
+                    <li><a href="#cssVal">CSS Validation</a></li>
+                    <li><a href="#javaVal">JavaScript Validation</a></li>
+                    <li><a href="#accessibility">Accessibility</a></li>
+                </ul>
+                <li>Related Links</li>
+                <ul>
+                    <li><a href="feedback.html">View Feedback Page</a></li>
+                    <li><a href="editor.html">Page Editor</a></li>
+                </ul>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Biodiversity & Ecosystem. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="feedback_val.html">Validation</a>
+            <span class="divider">|</span>
+            <a href="editor.html">Page Editor</a>
+        </div>
+    </footer>
+</body>
+</html>

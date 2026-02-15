@@ -1,0 +1,76 @@
+/* General Layout */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f4fdf6;
+    color: #2c3e50;
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 40px 30px;
+    line-height: 1.7;
+    box-shadow: 0 0 10px rgba(0, 100, 0, 0.05);
+    border-radius: 10px;
+}
+
+/* Headings */
+h1 {
+    font-size: 2rem;
+    color: #2e7d32;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.4rem;
+    color: #388e3c;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.1rem;
+    color: #4caf50;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Links */
+a {
+    color: #1565c0;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #0d47a1;
+}
+
+/* Lists */
+ul {
+    padding-left: 25px;
+    margin-top: 10px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* Images for Validation Screenshots */
+.val-img {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    border: 1px solid #ccc;
+    margin: 10px 0 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Reflection Box (Validation Comments) */
+.reflection {
+    background-color: #e8f5e9;
+    border-left: 5px solid #2e7d32;
+    padding: 15px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+}

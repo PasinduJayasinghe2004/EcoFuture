@@ -1,0 +1,290 @@
+
+.hero-section {
+    background-image: url(../ST2/bio.jpg) ;
+    background-position:center;
+    background-size: cover;
+    height: 750px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.hero-section h1 {
+    font-size: 4rem; /* Larger font */
+    margin-bottom: 1rem;
+    color: whitesmoke;
+    animation: fadeIn 1s ease;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    max-width: 800px;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+
+
+/* About Section */
+.about-section {
+    display: flex;
+    background-size: cover;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    background: rgb(222, 235, 164);
+    padding: 4rem;
+    margin: 4rem 0;
+    border-radius: 10px;
+}
+
+.about-image img {
+    width:400px;
+    height: 300px;
+}
+
+
+.student-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.student-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: var(--text-dark);
+    display: block;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.student-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(61, 107, 53, 0);
+    transition: background 0.3s ease;
+    z-index: 1;
+}
+
+.student-card:hover::before {
+    background: rgba(61, 107, 53, 0.05);
+}
+
+.student-card:hover .card-title {
+    color: var(--secondary-green);
+}
+
+.student-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.card-title {
+    color: var(--primary-green);
+    margin-bottom: 0.5rem;
+}
+
+/* Vision & Mission Section */
+.vision-mission {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+/* Vision & Mission Container */
+.vm-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+/* Individual Cards */
+.vm-card {
+    background: rgb(162, 233, 162);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Effect */
+.vm-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Top Border Effect */
+.vm-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: var(--primary-green);
+}
+
+/* Icons */
+.vm-icon {
+    font-size: 2.5rem;
+    color: var(--primary-green);
+    margin-bottom: 1.5rem;
+}
+
+/* Titles */
+.vm-vision h3 {
+    color: var(--primary-green);
+    font-size: 1.8rem;
+}
+
+.vm-mission h3 {
+    color: var(--secondary-green);
+    font-size: 1.8rem;
+}
+
+/* Mission List */
+.mission-list {
+    list-style: none;
+    padding: 0;
+}
+
+.mission-list li {
+    padding: 0.8rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-bottom: 1px solid var(--accent-beige);
+    font-size: 1rem;
+}
+
+/* Mission List Icons */
+.mission-list i {
+    color: var(--primary-green);
+    width: 25px;
+    font-size: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .vm-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .vm-card {
+        width: 90%;
+        max-width: 100%;
+    }
+}
+
+h2 {
+    color: var(--primary-green);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 3px solid var(--accent-beige);
+}
+
+
+
+/* Responsive Table */
+@media (max-width: 768px) {
+    main {
+        padding: 0 1rem;
+    }
+    
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-info {
+        grid-template-columns: 1fr;
+    }
+
+    .about-section {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+}
+body {
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      rgba(245, 240, 230, 0.702),
+      rgba(245, 240, 230, 0.827)
+    ),
+    url("../ST3/images/new.jpg") center/cover fixed;
+  z-index: -1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
